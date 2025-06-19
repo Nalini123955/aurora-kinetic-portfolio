@@ -1,8 +1,17 @@
 
 import { useRef, useMemo } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, extend } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import * as THREE from "three";
+
+// Extend the JSX namespace to include Three.js elements
+extend({ 
+  Mesh: THREE.Mesh,
+  TorusKnotGeometry: THREE.TorusKnotGeometry,
+  MeshBasicMaterial: THREE.MeshBasicMaterial,
+  AmbientLight: THREE.AmbientLight,
+  PointLight: THREE.PointLight
+});
 
 interface FloatingGeometryProps {
   mousePosition: { x: number; y: number };
