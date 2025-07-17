@@ -66,7 +66,7 @@ export const ContactSection = () => {
                   <div className="w-3 h-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" />
                   <div>
                     <div className="text-white/60 text-sm">Email</div>
-                    <div className="text-white font-medium">john.doe@example.com</div>
+                    <div className="text-white font-medium">ssnalini2004@gmail.com</div>
                   </div>
                 </motion.div>
 
@@ -78,7 +78,7 @@ export const ContactSection = () => {
                   <div className="w-3 h-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full" />
                   <div>
                     <div className="text-white/60 text-sm">Location</div>
-                    <div className="text-white font-medium">San Francisco, CA</div>
+                    <div className="text-white font-medium">Vandavasi,Thiruvannamalai</div>
                   </div>
                 </motion.div>
 
@@ -111,7 +111,7 @@ export const ContactSection = () => {
                   className="flex items-center gap-3"
                 >
                   <div className="w-1 h-1 bg-purple-500 rounded-full" />
-                  5+ years of professional experience
+                  Fresher FullStack Developer
                 </motion.li>
                 <motion.li
                   initial={{ opacity: 0, x: -20 }}
@@ -129,7 +129,7 @@ export const ContactSection = () => {
                   className="flex items-center gap-3"
                 >
                   <div className="w-1 h-1 bg-pink-500 rounded-full" />
-                  Agile development methodology
+                  
                 </motion.li>
                 <motion.li
                   initial={{ opacity: 0, x: -20 }}
@@ -163,7 +163,7 @@ export const ContactSection = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:border-purple-500 transition-all duration-300"
-                  placeholder="John Doe"
+                  placeholder="Nalini Saravanan"
                   whileFocus={{ scale: 1.02 }}
                 />
               </div>
@@ -180,7 +180,7 @@ export const ContactSection = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:border-purple-500 transition-all duration-300"
-                  placeholder="john@example.com"
+                  placeholder="ssnalini2004@gmail.com"
                   whileFocus={{ scale: 1.02 }}
                 />
               </div>
