@@ -6,9 +6,8 @@ export const AboutSection = () => {
   const [hoveredStat, setHoveredStat] = useState<number | null>(null);
 
   const stats = [
-    { label: "Years Experience", value: "5+", color: "from-purple-500 to-pink-500" },
-    { label: "Projects Completed", value: "50+", color: "from-cyan-500 to-blue-500" },
-    { label: "Happy Clients", value: "30+", color: "from-green-500 to-emerald-500" },
+    { label: "FullStack Develeper", value: "Fresher", color: "from-purple-500 to-pink-500" },
+    { label: "Projects Completed", value: "25+", color: "from-cyan-500 to-blue-500" },
     { label: "Awards Won", value: "10+", color: "from-orange-500 to-red-500" }
   ];
 
@@ -31,20 +30,21 @@ export const AboutSection = () => {
               About Me
             </h2>
             <div className="text-xl text-white/80 leading-relaxed space-y-4">
-              <p>
-                I'm a passionate full-stack developer with over 5 years of experience 
-                creating innovative digital solutions. My journey in tech started with 
-                a curiosity about how things work under the hood.
-              </p>
+              <p>I am an enthusiastic Full Stack Developer with a strong passion for coding.
+               I love building real-world applications that solve problems.
+               My learning journey started with front-end and expanded to full stack.    
+             </p>
               <p>
                 I specialize in modern web technologies including React, Node.js, 
-                Python, and cloud technologies. I love turning complex problems 
+                Python, both frontend and backend technologies. I love turning complex problems 
                 into simple, beautiful, and intuitive solutions.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies, 
-                contributing to open source projects, or sharing knowledge with 
-                the developer community.
+               I’m currently improving my DSA and problem-solving skills.
+            I’m also exploring Machine Learning and AI step by step.
+             My dream is to work in a top company as a Python Full Stack Developer.
+             I believe in learning daily, building projects, and staying consistent.
+             With strong dedication, I’m confident about achieving my goals.
               </p>
             </div>
           </motion.div>
@@ -55,7 +55,7 @@ export const AboutSection = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="flex flex-wrap gap-4"
           >
-            {["React", "Node.js", "Python", "AWS", "Docker", "TypeScript"].map((tech, index) => (
+            {["HTML", "Css","javascript", "Reactjs","Python","Django" "Mysql", "AWS", "Rest API"].map((tech, index) => (
               <motion.span
                 key={tech}
                 initial={{ opacity: 0, scale: 0 }}
