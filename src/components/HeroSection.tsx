@@ -72,7 +72,7 @@ export const HeroSection = () => {
             transition={{ duration: 3, repeat: Infinity }}
             style={{ backgroundSize: "200% 200%" }}
           >
-            John Doe
+            Nalini Saravanan
           </motion.h1>
           
           <motion.div
