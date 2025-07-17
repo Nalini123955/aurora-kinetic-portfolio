@@ -66,7 +66,7 @@ export const AboutSection = () => {
               >
                 {tech}
               </motion.span>
-            ))
+            ))}
           </motion.div>
         </motion.div>
 
