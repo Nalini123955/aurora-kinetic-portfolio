@@ -25,19 +25,19 @@ export const ProjectsSection = () => {
       description: "A modern e-commerce platform with real-time inventory, payment processing, and admin dashboard.",
       tech: ["React", "Node.js", "MongoDB", "Stripe"],
       image: "/placeholder.svg",
-      github: "#",
-      demo: "#",
+      github: "https://github.com/Nalini123955/ecommerce_.git",
+      demo: "https://magical-rolypoly-23a4c4.netlify.app/",
       category: "Web App"
     },
     {
       id: 2,
-      title: "AI Chat Assistant",
-      description: "An intelligent chatbot powered by GPT-4 with natural language processing and context awareness.",
+      title: "Nalini Academy",
+      description: "A Responsive online learning platform built using HTML, CSS, and Javascript. It offers a simple and clean interface users to explore and learn courses online.",
       tech: ["Python", "OpenAI", "FastAPI", "React"],
       image: "/placeholder.svg",
-      github: "#",
-      demo: "#",
-      category: "AI/ML"
+      github: "https://github.com/Nalini123955/nalini_academy.git",
+      demo: "https://naliniacademy.vercel.app/",
+      category: "Web App"
     },
     {
       id: 3,
