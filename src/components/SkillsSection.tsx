@@ -13,14 +13,13 @@ export const SkillsSection = () => {
   const [animatedValues, setAnimatedValues] = useState<{ [key: string]: number }>({});
 
   const skills: Skill[] = [
-    { name: "React/Next.js", level: 95, category: "Frontend", color: "from-blue-500 to-cyan-500" },
-    { name: "TypeScript", level: 90, category: "Frontend", color: "from-blue-600 to-blue-400" },
-    { name: "Node.js", level: 88, category: "Backend", color: "from-green-500 to-emerald-500" },
-    { name: "Python", level: 85, category: "Backend", color: "from-yellow-500 to-orange-500" },
-    { name: "AWS/Cloud", level: 82, category: "DevOps", color: "from-purple-500 to-pink-500" },
-    { name: "Docker", level: 80, category: "DevOps", color: "from-cyan-500 to-blue-600" },
-    { name: "GraphQL", level: 78, category: "Backend", color: "from-pink-500 to-rose-500" },
-    { name: "MongoDB", level: 85, category: "Database", color: "from-green-600 to-green-400" }
+    { name: "HTML", level: 95, category: "Frontend", color: "from-blue-500 to-cyan-500" },
+    { name: "CSS", level: 90, category: "Frontend", color: "from-blue-600 to-blue-400" },
+    { name: "javascript",level: 85, category: "Frontend", color: "from-yellow-500 to-orange-500" },
+    { name: "React js", level: 82, category: "Frontend", color: "from-purple-500 to-pink-500" },
+    { name: "python", level: 90, category: "Backend", color: "from-cyan-500 to-blue-600" },
+    { name: "Django", level: 78, category: "Backend", color: "from-pink-500 to-rose-500" },
+    { name: "Mysql", level: 85, category: "Database", color: "from-green-600 to-green-400" }
   ];
 
   useEffect(() => {
@@ -50,7 +49,7 @@ export const SkillsSection = () => {
             My Skills
           </h2>
           <p className="text-xl text-white/70 max-w-2xl mx-auto">
-            A showcase of technologies and tools I've mastered over the years
+            A showcase of technologies and tools I've learned.
           </p>
         </motion.div>
 
