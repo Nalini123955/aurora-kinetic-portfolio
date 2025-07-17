@@ -55,7 +55,7 @@ export const AboutSection = () => {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="flex flex-wrap gap-4"
           >
-            {["HTML", "Css","javascript","Reactjs","Python","Django","Mysql","AWS","Rest API"].map((tech, index) => (
+            {["HTML", "Css", "javascript", "Reactjs", "Python", "Django", "Mysql", "AWS", "Rest API"].map((tech, index) => (
               <motion.span
                 key={tech}
                 initial={{ opacity: 0, scale: 0 }}
