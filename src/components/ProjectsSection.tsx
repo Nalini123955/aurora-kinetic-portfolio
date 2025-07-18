@@ -44,7 +44,7 @@ export const ProjectsSection = () => {
       title: "Expense Tracker",
       description: "A collaborative project management tool with real-time updates, file sharing, and team analytics.",
       tech: ["python","Django"],
-      image: "images/expense.png",
+      image: "/expense.png",
       github: "https://github.com/Nalini123955/expense-tracker.git",
       demo: "https://nalini1234.pythonanywhere.com/",
       category: "Web App"
