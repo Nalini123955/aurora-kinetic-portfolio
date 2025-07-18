@@ -24,7 +24,7 @@ export const ProjectsSection = () => {
       title: "E-Commerce Platform",
       description: "A modern e-commerce platform with real-time inventory, payment processing, and admin dashboard.",
       tech: ["Html","Css","javascript"],
-      image: "images/ecom.png",
+      image: ![Ecommerce Cover](images/ecom.png),
       github: "https://github.com/Nalini123955/ecommerce_.git",
       demo: "https://magical-rolypoly-23a4c4.netlify.app/",
       category: "Web App"
