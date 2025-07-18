@@ -41,12 +41,12 @@ export const ProjectsSection = () => {
     },
     {
       id: 3,
-      title: "Task Management System",
+      title: "Expense Tracker",
       description: "A collaborative project management tool with real-time updates, file sharing, and team analytics.",
-      tech: ["Next.js", "PostgreSQL", "Prisma", "Socket.io"],
+      tech: ["python","Django"],
       image: "/placeholder.svg",
-      github: "#",
-      demo: "#",
+      github: "https://github.com/Nalini123955/expense-tracker.git",
+      demo: "https://nalini1234.pythonanywhere.com/",
       category: "Web App"
     },
     {
