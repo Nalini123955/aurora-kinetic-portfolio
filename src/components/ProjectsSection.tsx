@@ -24,7 +24,7 @@ export const ProjectsSection = () => {
       title: "E-Commerce Platform",
       description: "A modern e-commerce platform with real-time inventory, payment processing, and admin dashboard.",
       tech: ["Html","Css","javascript"],
-      image: ![Ecommerce Cover](images/ecom.png),
+      image: "/ecom.png",
       github: "https://github.com/Nalini123955/ecommerce_.git",
       demo: "https://magical-rolypoly-23a4c4.netlify.app/",
       category: "Web App"
@@ -34,7 +34,7 @@ export const ProjectsSection = () => {
       title: "Nalini Academy",
       description: "A Responsive online learning platform built using HTML, CSS, and Javascript. It offers a simple and clean interface users to explore and learn courses online.",
       tech: ["Html","Css","Javascript"],
-      image: "images/academy.png",
+      image: "/academy.png",
       github: "https://github.com/Nalini123955/nalini_academy.git",
       demo: "https://naliniacademy.vercel.app/",
       category: "Web App"
