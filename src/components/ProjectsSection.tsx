@@ -2,6 +2,9 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Github, ArrowRight } from "lucide-react";
+import EcomImage from '../images/ecom.png';
+import AcademyImage from '../images/academy.png';
+import ExepenseImage from '../images/expense.png';
 
 interface Project {
   id: number;
