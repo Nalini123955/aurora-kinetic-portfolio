@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Github, ArrowRight } from "lucide-react";
+import ecomImg from '../images/ecom.png';
+
 
 interface Project {
   id: number;
@@ -24,7 +26,7 @@ export const ProjectsSection = () => {
       title: "E-Commerce Platform",
       description: "A modern e-commerce platform with real-time inventory, payment processing, and admin dashboard.",
       tech: ["Html","Css","javascript"],
-      image: '/ecom.png',
+      image: ecomImg,
       github: "https://github.com/Nalini123955/ecommerce_.git",
       demo: "https://magical-rolypoly-23a4c4.netlify.app/",
       category: "Web App"
