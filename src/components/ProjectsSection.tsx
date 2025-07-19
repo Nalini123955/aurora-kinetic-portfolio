@@ -2,9 +2,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Github, ArrowRight } from "lucide-react";
-import EcomImage from '../images/ecom.png';
-import AcademyImage from '../images/academy.png';
-import ExepenseImage from '../images/expense.png';
 
 interface Project {
   id: number;
@@ -27,7 +24,7 @@ export const ProjectsSection = () => {
       title: "E-Commerce Platform",
       description: "A modern e-commerce platform with real-time inventory, payment processing, and admin dashboard.",
       tech: ["Html","Css","javascript"],
-      image: '../images/ecom.png',
+      image: '/ecom.png',
       github: "https://github.com/Nalini123955/ecommerce_.git",
       demo: "https://magical-rolypoly-23a4c4.netlify.app/",
       category: "Web App"
@@ -37,7 +34,7 @@ export const ProjectsSection = () => {
       title: "Nalini Academy",
       description: "A Responsive online learning platform built using HTML, CSS, and Javascript. It offers a simple and clean interface users to explore and learn courses online.",
       tech: ["Html","Css","Javascript"],
-      image: "../images/academy.png",
+      image: "/academy.png",
       github: "https://github.com/Nalini123955/nalini_academy.git",
       demo: "https://naliniacademy.vercel.app/",
       category: "Web App"
@@ -47,7 +44,7 @@ export const ProjectsSection = () => {
       title: "Expense Tracker",
       description: "A collaborative project management tool with real-time updates, file sharing, and team analytics.",
       tech: ["python","Django"],
-      image: "../images/expense.png",
+      image: "/expense.png",
       github: "https://github.com/Nalini123955/expense-tracker.git",
       demo: "https://nalini1234.pythonanywhere.com/",
       category: "Web App"
