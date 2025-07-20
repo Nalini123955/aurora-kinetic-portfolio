@@ -1,9 +1,9 @@
-
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Github, ArrowRight } from "lucide-react";
-import ecomImg from '../images/ecom.png';
-
+import ecomImg from "../images/ecom.png";
+import academyImg from "../images/academy.png";
+import expenseImg from "../images/expense.png";
 
 interface Project {
   id: number;
@@ -24,70 +24,77 @@ export const ProjectsSection = () => {
     {
       id: 1,
       title: "E-Commerce Platform",
-      description: "A modern e-commerce platform with real-time inventory, payment processing, and admin dashboard.",
-      tech: ["Html","Css","javascript"],
+      description:
+        "A modern e-commerce platform with real-time inventory, payment processing, and admin dashboard.",
+      tech: ["HTML", "CSS", "JavaScript"],
       image: ecomImg,
       github: "https://github.com/Nalini123955/ecommerce_.git",
       demo: "https://magical-rolypoly-23a4c4.netlify.app/",
-      category: "Web App"
+      category: "Web App",
     },
     {
       id: 2,
       title: "Nalini Academy",
-      description: "A Responsive online learning platform built using HTML, CSS, and Javascript. It offers a simple and clean interface users to explore and learn courses online.",
-      tech: ["Html","Css","Javascript"],
-      image: "/academy.png",
+      description:
+        "A responsive online learning platform built using HTML, CSS, and JavaScript. It offers a simple and clean interface for users to explore and learn courses online.",
+      tech: ["HTML", "CSS", "JavaScript"],
+      image: academyImg,
       github: "https://github.com/Nalini123955/nalini_academy.git",
       demo: "https://naliniacademy.vercel.app/",
-      category: "Web App"
+      category: "Web App",
     },
     {
       id: 3,
       title: "Expense Tracker",
-      description: "A collaborative project management tool with real-time updates, file sharing, and team analytics.",
-      tech: ["python","Django"],
-      image: "/expense.png",
+      description:
+        "A collaborative expense management tool with real-time updates, user authentication, and graphical analysis.",
+      tech: ["Python", "Django"],
+      image: expenseImg,
       github: "https://github.com/Nalini123955/expense-tracker.git",
       demo: "https://nalini1234.pythonanywhere.com/",
-      category: "Web App"
+      category: "Web App",
     },
     {
       id: 4,
       title: "Mobile Fitness Tracker",
-      description: "Cross-platform mobile app for fitness tracking with workout plans, progress analytics, and social features.",
+      description:
+        "Cross-platform mobile app for fitness tracking with workout plans, progress analytics, and social features.",
       tech: ["React Native", "Firebase", "Redux", "Charts.js"],
       image: "/placeholder.svg",
       github: "#",
       demo: "#",
-      category: "Mobile"
+      category: "Mobile",
     },
     {
       id: 5,
       title: "Blockchain Voting System",
-      description: "Secure and transparent voting platform built on Ethereum with smart contracts and decentralized storage.",
+      description:
+        "Secure and transparent voting platform built on Ethereum with smart contracts and decentralized storage.",
       tech: ["Solidity", "Web3.js", "React", "IPFS"],
       image: "/placeholder.svg",
       github: "#",
       demo: "#",
-      category: "Blockchain"
+      category: "Blockchain",
     },
     {
       id: 6,
       title: "Real-time Analytics Dashboard",
-      description: "Business intelligence dashboard with real-time data visualization and predictive analytics.",
+      description:
+        "Business intelligence dashboard with real-time data visualization and predictive analytics.",
       tech: ["Vue.js", "D3.js", "Python", "TensorFlow"],
       image: "/placeholder.svg",
       github: "#",
       demo: "#",
-      category: "Data Science"
-    }
+      category: "Data Science",
+    },
   ];
 
-  const categories = ["All", ...Array.from(new Set(projects.map(p => p.category)))];
-  
-  const filteredProjects = selectedCategory === "All" 
-    ? projects 
-    : projects.filter(p => p.category === selectedCategory);
+  const categories = ["All", ...Array.from(new Set(projects.map((p) => p.category)))];
+
+  const filteredProjects =
+    selectedCategory === "All"
+      ? projects
+      : projects.filter((p) => p.category === selectedCategory);
 
   return (
     <section className="min-h-screen flex items-center justify-center px-6 py-20">
@@ -102,7 +109,7 @@ export const ProjectsSection = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-white/70 max-w-2xl mx-auto mb-8">
-            A collection of projects that showcase my skills and passion for creating innovative solutions
+            A collection of projects that showcase my skills and passion for creating innovative solutions.
           </p>
 
           {/* Category Filter */}
@@ -113,8 +120,8 @@ export const ProjectsSection = () => {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                   selectedCategory === category
-                    ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white'
-                    : 'bg-white/10 text-white/70 hover:bg-white/20 hover:text-white'
+                    ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white"
+                    : "bg-white/10 text-white/70 hover:bg-white/20 hover:text-white"
                 }`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -125,10 +132,7 @@ export const ProjectsSection = () => {
           </div>
         </motion.div>
 
-        <motion.div
-          layout
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
+        <motion.div layout className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -145,15 +149,15 @@ export const ProjectsSection = () => {
               <div className="relative bg-black/40 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden">
                 {/* Project Image */}
                 <div className="relative h-48 bg-gradient-to-br from-purple-500/20 to-cyan-500/20 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  />
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-br from-purple-600/40 to-pink-600/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                     initial={false}
                   />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-6xl font-bold text-white/20">
-                      {project.title.charAt(0)}
-                    </span>
-                  </div>
                 </div>
 
                 {/* Project Content */}
@@ -190,6 +194,8 @@ export const ProjectsSection = () => {
                       className="flex items-center gap-2 px-3 py-2 bg-white/10 hover:bg-white/20 text-white/80 hover:text-white rounded-lg text-sm transition-all duration-300"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <Github className="w-4 h-4" />
                       Code
@@ -199,6 +205,8 @@ export const ProjectsSection = () => {
                       className="flex items-center gap-2 px-3 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg text-sm transition-all duration-300"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <ArrowRight className="w-4 h-4" />
                       Demo
@@ -206,7 +214,7 @@ export const ProjectsSection = () => {
                   </div>
                 </div>
 
-                {/* Hover Effect */}
+                {/* Hover Effect Overlay */}
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
                   initial={false}
@@ -216,6 +224,7 @@ export const ProjectsSection = () => {
           ))}
         </motion.div>
 
+        {/* View All Button */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
