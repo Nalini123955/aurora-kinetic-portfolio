@@ -56,14 +56,14 @@ export const ProjectsSection = () => {
     },
     {
       id: 4,
-      title: "Mobile Fitness Tracker",
+      title: "Blog App",
       description:
-        "Cross-platform mobile app for fitness tracking with workout plans, progress analytics, and social features.",
-      tech: ["React Native", "Firebase", "Redux", "Charts.js"],
+         "This is a dynamic blog web application built using django. it allows users to view the latest blog posts with pagination and structured content. The project includes an About page and leverages Mysql for backend data storage.",
+      tech: ["python", "Django", "Mysql"],
       image: "/placeholder.svg",
-      github: "#",
-      demo: "#",
-      category: "Mobile",
+      github: "https://github.com/Nalini123955/my_blog.git",
+      demo: "https://django123.pythonanywhere.com/blog/",
+      category: "Web app",
     },
     {
       id: 5,
