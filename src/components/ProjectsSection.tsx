@@ -4,6 +4,7 @@ import { Github, ArrowRight } from "lucide-react";
 import ecomImg from "../images/ecom.png";
 import academyImg from "../images/academy.png";
 import expenseImg from "../images/expense.png";
+import blogImg from "../images/blog.png";
 
 interface Project {
   id: number;
@@ -60,7 +61,7 @@ export const ProjectsSection = () => {
       description:
          "This is a dynamic blog web application built using django. it allows users to view the latest blog posts with pagination and structured content. The project includes an About page and leverages Mysql for backend data storage.",
       tech: ["python", "Django", "Mysql"],
-      image: "/placeholder.svg",
+      image: blogImg,
       github: "https://github.com/Nalini123955/my_blog.git",
       demo: "https://django123.pythonanywhere.com/blog/",
       category: "Web app",
