@@ -68,7 +68,7 @@ export const ProjectsSection = () => {
     },
     {
       id: 5,
-      title: "Blockchain Voting System",
+      title: "SmartCrop_Tech Analysis App",
       description:
         "Secure and transparent voting platform built on Ethereum with smart contracts and decentralized storage.",
       tech: ["Solidity", "Web3.js", "React", "IPFS"],
