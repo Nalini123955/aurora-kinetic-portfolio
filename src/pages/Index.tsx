@@ -134,10 +134,10 @@ const Index = () => {
       {/* Social Links */}
       <div className="fixed left-8 bottom-8 z-50 flex flex-col gap-4">
         {[
-          { icon: Github, href: "#", color: "hover:text-gray-300" },
-          { icon: Linkedin, href: "#", color: "hover:text-blue-400" },
-          { icon: Twitter, href: "#", color: "hover:text-blue-400" },
-          { icon: Youtube, href: "#", color: "hover:text-red-400" }
+          { icon: Github, href: "https://github.com/Nalini123955", color: "hover:text-gray-300" },
+          { icon: Linkedin, href: "https://www.linkedin.com/in/nalini-saravanan", color: "hover:text-blue-400" },
+          { icon: X, href: "https://x.com/nalini_progr", color: "hover:text-blue-400" },
+          { icon: Leetcode, href: "https://leetcode.com/u/Nalini12345/", color: "hover:text-red-400" }
         ].map(({ icon: Icon, href, color }, index) => (
           <motion.a
             key={index}
