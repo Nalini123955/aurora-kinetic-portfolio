@@ -5,6 +5,7 @@ import ecomImg from "../images/ecom.png";
 import academyImg from "../images/academy.png";
 import expenseImg from "../images/expense.png";
 import blogImg from "../images/blog.png";
+import elearningsImg from "../images/elearnings.png";
 
 interface Project {
   id: number;
@@ -68,14 +69,14 @@ export const ProjectsSection = () => {
     },
     {
       id: 5,
-      title: "SmartCrop_Tech Analysis App",
+      title: "Online-Elearning-Platform",
       description:
-        "Secure and transparent voting platform built on Ethereum with smart contracts and decentralized storage.",
-      tech: ["Solidity", "Web3.js", "React", "IPFS"],
-      image: "/placeholder.svg",
-      github: "#",
-      demo: "#",
-      category: "Blockchain",
+        "An all-in-one Online E-learning Platform designed to make learning simple and accessible. With interactive courses, quizzes, and projects, students can learn at their own pace anytime, anywhere.",
+      tech: ["React js", "javascript","Html & css"],
+      image: "elearningsImg",
+      github: "https://github.com/Nalini123955/online-elearning-platform.git",
+      demo: "https://elearnings-24hs.vercel.app/",
+      category: "Web app",
     },
     {
       id: 6,
