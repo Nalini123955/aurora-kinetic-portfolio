@@ -1,7 +1,6 @@
-
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowDown, ArrowUp, Github, Linkedin, Twitter, Youtube } from "lucide-react";
+import { ArrowDown, ArrowUp, Github, Linkedin, Youtube } from "lucide-react";
 import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
 import { SkillsSection } from "../components/SkillsSection";
@@ -9,6 +8,7 @@ import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection } from "../components/ContactSection";
 import { Navigation } from "../components/Navigation";
 import { ParticlesBackground } from "../components/ParticlesBackground";
+import { LeetcodeIcon, XIcon } from "../components/icons/CustomIcons";
 
 const sections = [
   { id: 'hero', component: HeroSection, title: 'Home' },
@@ -24,10 +24,8 @@ const Index = () => {
 
   const scrollToSection = (index: number) => {
     if (isScrolling || index < 0 || index >= sections.length) return;
-    
     setIsScrolling(true);
     setCurrentSection(index);
-    
     setTimeout(() => setIsScrolling(false), 1000);
   };
 
@@ -35,25 +33,17 @@ const Index = () => {
     const handleWheel = (e: WheelEvent) => {
       e.preventDefault();
       if (isScrolling) return;
-
-      if (e.deltaY > 0) {
-        scrollToSection(currentSection + 1);
-      } else {
-        scrollToSection(currentSection - 1);
-      }
+      if (e.deltaY > 0) scrollToSection(currentSection + 1);
+      else scrollToSection(currentSection - 1);
     };
 
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowDown') {
-        scrollToSection(currentSection + 1);
-      } else if (e.key === 'ArrowUp') {
-        scrollToSection(currentSection - 1);
-      }
+      if (e.key === 'ArrowDown') scrollToSection(currentSection + 1);
+      else if (e.key === 'ArrowUp') scrollToSection(currentSection - 1);
     };
 
     window.addEventListener('wheel', handleWheel, { passive: false });
     window.addEventListener('keydown', handleKeyDown);
-
     return () => {
       window.removeEventListener('wheel', handleWheel);
       window.removeEventListener('keydown', handleKeyDown);
@@ -65,7 +55,7 @@ const Index = () => {
   return (
     <div className="relative min-h-screen bg-black overflow-hidden">
       <ParticlesBackground />
-      
+
       {/* Navigation */}
       <Navigation 
         sections={sections} 
@@ -80,11 +70,7 @@ const Index = () => {
           initial={{ opacity: 0, y: 100, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: -100, scale: 1.1 }}
-          transition={{ 
-            duration: 0.8, 
-            ease: [0.25, 0.1, 0.25, 1],
-            staggerChildren: 0.1
-          }}
+          transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1], staggerChildren: 0.1 }}
           className="relative z-10"
         >
           <CurrentComponent />
@@ -136,12 +122,15 @@ const Index = () => {
         {[
           { icon: Github, href: "https://github.com/Nalini123955", color: "hover:text-gray-300" },
           { icon: Linkedin, href: "https://www.linkedin.com/in/nalini-saravanan", color: "hover:text-blue-400" },
-          { icon: Twitter, href: "https://x.com/nalini_progr", color: "hover:text-blue-400" },
-          { icon: Leetcode, href: "https://leetcode.com/u/Nalini12345/", color: "hover:text-red-400" }
+          { icon: XIcon, href: "https://x.com/nalini_progr", color: "hover:text-blue-400" },
+          { icon: Youtube, href: "https://youtube.com/@NaliniYT", color: "hover:text-red-500" },
+          { icon: LeetcodeIcon, href: "https://leetcode.com/u/Nalini12345/", color: "hover:text-orange-400" }
         ].map(({ icon: Icon, href, color }, index) => (
           <motion.a
             key={index}
             href={href}
+            target="_blank"
+            rel="noopener noreferrer"
             className={`text-white/70 ${color} transition-all duration-300`}
             whileHover={{ scale: 1.2, y: -2 }}
             whileTap={{ scale: 0.9 }}
