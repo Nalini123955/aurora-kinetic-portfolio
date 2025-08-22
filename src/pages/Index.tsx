@@ -8,6 +8,7 @@ import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection } from "../components/ContactSection";
 import { Navigation } from "../components/Navigation";
 import { ParticlesBackground } from "../components/ParticlesBackground";
+// Make sure these are the REAL SVG/icon components for Leetcode and X!
 import { LeetcodeIcon, XIcon } from "../components/icons/CustomIcons";
 
 const sections = [
@@ -122,8 +123,10 @@ const Index = () => {
         {[
           { icon: Github, href: "https://github.com/Nalini123955", color: "hover:text-gray-300" },
           { icon: Linkedin, href: "https://www.linkedin.com/in/nalini-saravanan", color: "hover:text-blue-400" },
+          // XIcon (Twitter) - use your real icon!
           { icon: XIcon, href: "https://x.com/nalini_progr", color: "hover:text-blue-400" },
           { icon: Youtube, href: "https://youtube.com/@NaliniYT", color: "hover:text-red-500" },
+          // LeetcodeIcon - use your real icon!
           { icon: LeetcodeIcon, href: "https://leetcode.com/u/Nalini12345/", color: "hover:text-orange-400" }
         ].map(({ icon: Icon, href, color }, index) => (
           <motion.a
