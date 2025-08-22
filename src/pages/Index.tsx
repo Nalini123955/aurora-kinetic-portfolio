@@ -136,7 +136,7 @@ const Index = () => {
         {[
           { icon: Github, href: "https://github.com/Nalini123955", color: "hover:text-gray-300" },
           { icon: Linkedin, href: "https://www.linkedin.com/in/nalini-saravanan", color: "hover:text-blue-400" },
-          { icon: X, href: "https://x.com/nalini_progr", color: "hover:text-blue-400" },
+          { icon: Twitter, href: "https://x.com/nalini_progr", color: "hover:text-blue-400" },
           { icon: Leetcode, href: "https://leetcode.com/u/Nalini12345/", color: "hover:text-red-400" }
         ].map(({ icon: Icon, href, color }, index) => (
           <motion.a
