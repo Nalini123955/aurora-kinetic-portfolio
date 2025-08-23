@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowDown, ArrowUp, Github, Linkedin, Twitter, Leetcode} from "lucide-react";
+import { ArrowDown, ArrowUp, Github, Linkedin, X } from "lucide-react"; 
 import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
 import { SkillsSection } from "../components/SkillsSection";
@@ -8,6 +8,19 @@ import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection } from "../components/ContactSection";
 import { Navigation } from "../components/Navigation";
 import { ParticlesBackground } from "../components/ParticlesBackground";
+
+// ✅ Custom Leetcode Icon (SVG)
+const LeetcodeIcon = (props: any) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 50 50"
+    fill="currentColor"
+    {...props}
+  >
+    <path d="M25 2C12.3 2 2 12.3 2 25s10.3 23 23 23 23-10.3 23-23S37.7 2 25 2zm0 42C13.4 44 4 34.6 4 23S13.4 2 25 2s21 9.4 21 21-9.4 21-21 21z"/>
+    <path d="M31 17l-7 7 7 7-2 2-9-9 9-9z"/>
+  </svg>
+);
 
 const sections = [
   { id: 'hero', component: HeroSection, title: 'Home' },
@@ -130,13 +143,13 @@ const Index = () => {
         <ArrowDown className="w-5 h-5 text-white" />
       </motion.button>
 
-      {/* Social Links */}
+      {/* ✅ Social Links */}
       <div className="fixed left-8 bottom-8 z-50 flex flex-col gap-4">
         {[
           { icon: Github, href: "https://github.com/Nalini123955", color: "hover:text-gray-300" },
           { icon: Linkedin, href: "https://www.linkedin.com/in/nalini-saravanan", color: "hover:text-blue-400" },
-          { icon: Twitter, href: "https://x.com/nalini_progr", color: "hover:text-blue-400" },
-         { icon: Leetcode, href: "https://leetcode.com/u/Nalini12345/", color: "hover:text-red-400" },
+          { icon: X, href: "https://x.com/nalini_progr", color: "hover:text-blue-400" },
+          { icon: LeetcodeIcon, href: "https://leetcode.com/u/Nalini12345/", color: "hover:text-orange-400" }, 
         ].map(({ icon: Icon, href, color }, index) => (
           <motion.a
             key={index}
@@ -146,6 +159,9 @@ const Index = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: index * 0.1 + 1 }}
+            className={color}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Icon className="w-6 h-6" />
           </motion.a>
@@ -156,3 +172,4 @@ const Index = () => {
 };
 
 export default Index;
+   
