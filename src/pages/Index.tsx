@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowDown, ArrowUp, Github, Linkedin, Twitter} from "lucide-react";
+import { ArrowDown, ArrowUp, Github, Linkedin, Twitter, Leetcode} from "lucide-react";
 import { HeroSection } from "../components/HeroSection";
 import { AboutSection } from "../components/AboutSection";
 import { SkillsSection } from "../components/SkillsSection";
