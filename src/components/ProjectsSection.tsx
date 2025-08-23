@@ -73,7 +73,7 @@ export const ProjectsSection = () => {
       description:
         "An all-in-one Online E-learning Platform designed to make learning simple and accessible. With interactive courses, quizzes, and projects, students can learn at their own pace anytime, anywhere.",
       tech: ["React js", "javascript","Html & css"],
-      image: "elearningsImg",
+      image: elearningsImg,
       github: "https://github.com/Nalini123955/online-elearning-platform.git",
       demo: "https://elearnings-24hs.vercel.app/",
       category: "Web app",
