@@ -6,6 +6,7 @@ import academyImg from "../images/academy.png";
 import expenseImg from "../images/expense.png";
 import blogImg from "../images/blog.png";
 import elearningsImg from "../images/elearnings.png";
+import empsImg from "../images/emps.png";
 
 interface Project {
   id: number;
@@ -84,10 +85,10 @@ export const ProjectsSection = () => {
       description:
         "A role-based Employee Management System built with Django and MySQL, featuring full CRUD operations for employee and company data. The system allows admins to add, update, view, and delete employee records through a responsive Bootstrap interface. Real-time data handling ensures efficient performance tracking and streamlined HR workflows.",
       tech: ["python","Django","Bootstrap","Mysql"],
-      image: "/placeholder.svg",
-      github: "#",
-      demo: "#",
-      category: "Data Science",
+      image: empsImg,
+      github: "https://github.com/Nalini123955/employee-management-system.git",
+      demo: "https://emps4321.pythonanywhere.com/",
+      category: "Web app",
     },
   ];
 
