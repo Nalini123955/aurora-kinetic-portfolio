@@ -87,7 +87,7 @@ export const ProjectsSection = () => {
       tech: ["python","Django","Bootstrap","Mysql"],
       image: empsImg,
       github: "https://github.com/Nalini123955/employee-management-system.git",
-      demo: "https://emps4321.pythonanywhere.com/",
+      demo: "https://emps4321.pythonanywhere.com/emp/home/",
       category: "Web app",
     },
   ];
