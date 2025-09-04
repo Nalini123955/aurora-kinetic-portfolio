@@ -80,10 +80,10 @@ export const ProjectsSection = () => {
     },
     {
       id: 6,
-      title: "Real-time Analytics Dashboard",
+      title: "Employee Management System",
       description:
-        "Business intelligence dashboard with real-time data visualization and predictive analytics.",
-      tech: ["Vue.js", "D3.js", "Python", "TensorFlow"],
+        "A role-based Employee Management System built with Django and MySQL, featuring full CRUD operations for employee and company data. The system allows admins to add, update, view, and delete employee records through a responsive Bootstrap interface. Real-time data handling ensures efficient performance tracking and streamlined HR workflows.",
+      tech: ["python","Django","Bootstrap","Mysql"],
       image: "/placeholder.svg",
       github: "#",
       demo: "#",
