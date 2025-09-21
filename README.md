@@ -1,4 +1,9 @@
-## Aurora Kinetic Portfolio
+## Nalini Portfolio
+A modern and responsive personal portfolio built with React, TypeScript, and Tailwind CSS.  
+Showcases my skills, projects, and experience in front-end development and UI design.  
+Designed to be fast, accessible, and visually engaging across all devices.  
+Explore my work and get in touch for collaboration or opportunities.
+
 ## Project Info
 This is a personal portfolio project showcasing web development skills, projects, and experience. Built with modern technologies for fast, responsive, and beautiful user experience.
 ## How to Edit the Code
