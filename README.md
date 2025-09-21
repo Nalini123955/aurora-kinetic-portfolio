@@ -1,48 +1,43 @@
-# Welcome to your Lovable project
-
-## Project info
-
-**URL**: https://lovable.dev/projects/c1641260-553a-4e05-8a20-72f736e99554
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/c1641260-553a-4e05-8a20-72f736e99554) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
+## Aurora Kinetic Portfolio
+## Project Info
+This is a personal portfolio project showcasing web development skills, projects, and experience. Built with modern technologies for fast, responsive, and beautiful user experience.
+## How to Edit the Code
+You can edit this project using your favorite IDE or code editor. To get started:
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Step 1: Clone the repository using your project's Git URL.
 git clone <YOUR_GIT_URL>
-
 # Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
-
 # Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+npm install
+# Step 4: Start the development server for instant preview and auto-reloading.
 npm run dev
 ```
+## Technologies Used
+## Technologies Used
+ - Vite
+ - TypeScript
+ - React
+ - shadcn-ui
+ - Tailwind CSS
 
-**Edit a file directly in GitHub**
+## Project Screenshots
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Here are some screenshots from the portfolio:
 
-**Use GitHub Codespaces**
+![Academy](src/images/academy.png)
+![Blog](src/images/blog.png)
+![E-commerce](src/images/ecom.png)
+![E-learnings](src/images/elearnings.png)
+![Employee Management](src/images/emps.png)
+![Expense Tracker](src/images/expense.png)
+
+## How to Deploy
+You can deploy this project using your preferred hosting platform. For static hosting, build the project and upload the output from the `dist` folder.
+## Custom Domain Setup
+To connect a custom domain, refer to your hosting provider's documentation for domain configuration and DNS setup.
+---
+Feel free to customize this portfolio to reflect your own style and achievements!
 
 - Navigate to the main page of your repository.
 - Click on the "Code" button (green button) near the top right.
@@ -60,14 +55,3 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c1641260-553a-4e05-8a20-72f736e99554) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
